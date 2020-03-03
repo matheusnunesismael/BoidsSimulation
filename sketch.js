@@ -58,7 +58,7 @@ function setup() {
   cohesionSlider.position(marginSliderLeft, marginSlidertop +100)
   separationSlider.position(marginSliderLeft, marginSlidertop +200)
 
-  for (let i = 0; i < 500; i++) {
+  for (let i = 0; i < 200; i++) {
     if(i == 199)
       flock.push(new Boid(true));
     else
@@ -88,10 +88,7 @@ function draw() {
     image(fundoAt, 0, 0);
   }
   else if(fundo)
-    //background(51);
-
-    console.log("lala")
-
+    background(51);
   for (let boid of flock){
     boid.show();
     boid.edges();
